@@ -10,5 +10,6 @@
 			<p> Status: {{object.status}} </p>
 		</div>	
 		
-		<a href="{% url 'post_edit' post.pk %}">+ Editar Postagem do Blog</a>
+		<a href="{% url 'post_edit' post.pk %}">+ Editar Postagem do Blog</a><br>
+		<a href="{% url 'post_delete' post.pk %}">- Apagar Postagem do Blog</a>
 {% endblock content %}
