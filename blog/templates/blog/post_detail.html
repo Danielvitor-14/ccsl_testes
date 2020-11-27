@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block title %} Blog - detalhe {% endblock title %}
+
+{% block content %}
+
+		<div class="post-entry">
+			<h2> Titulo: {{ object.titulo }} </h2>
+			<p> Conteudo: {{object.conteudo}} </p>
+			<p> Status: {{object.status}} </p>
+		</div>	
+		
+		<a href="{% url 'post_edit' post.pk %}">+ Editar Postagem do Blog</a>
+{% endblock content %}
